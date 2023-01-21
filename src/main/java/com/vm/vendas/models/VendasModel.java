@@ -20,7 +20,7 @@ public class VendasModel {
     @Column(name = "data_venda")
     private LocalDateTime dataVenda;
     private float valor;
-    @Column(name = "vendedor_id")
+    @JoinColumn(name = "vendedor_id")
     @ManyToOne
     private VendedorModel vendedorId;
 
